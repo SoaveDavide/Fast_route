@@ -1,0 +1,245 @@
+/* General Image Styling */
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Title Styling */
+.title {
+    text-align: center;
+    color: #cf2011;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+
+/* Label Styling */
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-align: left;
+    color: #cf2011;
+    font-size: 1.1rem;
+}
+
+/* Common input styles for text, number, and date */
+input[type="text"],
+input[type = "password"],
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type = "password"],
+input[type="number"]:focus,
+input[type="date"]:focus {
+    outline: none;
+    border-color: #cf2011;
+    box-shadow: 0 0 8px rgba(207, 32, 17, 0.3);
+}
+/* Select Styling */
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+    background-color: #fff;
+    appearance: none; /* Rimuove lo stile di default del browser */
+    cursor: pointer;
+}
+
+/* Focus Effect */
+select:focus {
+    outline: none;
+    border-color: #cf2011;
+    box-shadow: 0 0 8px rgba(207, 32, 17, 0.3);
+}
+
+/* Dropdown Arrow Styling */
+select::-ms-expand {
+    display: none; /* Nasconde la freccia di default su Internet Explorer */
+}
+
+/* Option Styling */
+option {
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    select {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+
+input[type="date"]::placeholder {
+    color: #888;
+}
+
+input[type="submit"] {
+    background: #cf2011;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"]:hover {
+    background: #b71d0d;
+}
+
+/* Table Styling - Improved */
+.table-styled {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    font-size: 1.1rem;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-styled thead {
+    background: #cf2011;
+    color: #fff;
+    font-weight: bold;
+}
+
+.table-styled th,
+.table-styled td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.table-styled th {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.table-styled tbody tr:nth-child(even) {
+    background: #fdf1f1;
+}
+
+.table-styled tbody tr:nth-child(odd) {
+    background: #fff;
+}
+
+.table-styled tbody tr:hover {
+    background: rgba(207, 32, 17, 0.1);
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    .table-styled {
+        font-size: 1rem;
+    }
+
+    .table-styled th,
+    .table-styled td {
+        padding: 12px 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .table-styled {
+        font-size: 0.9rem;
+    }
+
+    .table-styled th,
+    .table-styled td {
+        padding: 10px;
+    }
+}
+
+.btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #007bff;
+    border-color: #007bff;
+}
+
+
+/* Small Responsive Adjustments */
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .form-container {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .table-styled th, .table-styled td {
+        font-size: 0.9rem;
+        padding: 10px 12px;
+    }
+}
+.logo-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.logo-container img {
+    max-width: 300px; /* Aumentato da 200px a 300px */
+    width: 100%;
+    height: auto;
+}
+
+/* Stile per l'accordion */
+.accordion-button {
+    background-color: #cf2011;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.accordion-button:hover {
+    background-color: #b71d0d;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    background-color: #f8f9fa;
+    font-size: 1.1rem;
+}
